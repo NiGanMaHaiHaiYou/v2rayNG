@@ -199,7 +199,7 @@ class V2RayVpnService : VpnService(), ServiceControl {
         val cmd = arrayListOf(File(applicationContext.applicationInfo.nativeLibraryDir, TUN2SOCKS).absolutePath,
                 "--netif-ipaddr", PRIVATE_VLAN4_ROUTER,
                 "--netif-netmask", "255.255.255.252",
-                "--socks-server-addr", "127.0.0.1:42810,
+                "--socks-server-addr", "127.0.0.1:42810",
                 //"--socks-server-addr", "127.0.0.1:${socksPort}",
                 "--tunmtu", VPN_MTU.toString(),
                 "--sock-path", "sock_path",//File(applicationContext.filesDir, "sock_path").absolutePath,
